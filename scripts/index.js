@@ -1,9 +1,5 @@
-/*$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-*/
 var valCorreo = '';
-console.log(constantes.servicioWeb);
+
 function registrar() {
     var copiarCorreo = $('#correo').val();
     $('#userCorreo').val(copiarCorreo);
@@ -11,31 +7,6 @@ function registrar() {
     var email = $('#correo').val();
     valCorreo = 'correo';
     $('#usuarioModal').modal();
-
-    /* $("#formulario1").validate({
-             rules: {
-              correo: {
-                  required: true,
-                  email: true,
-
-              }
-          },
-          messages: {
-             correo: {
-                  required: "",
-                  email: ""
-              }
-          },
-          submitHandler: function(form) {
-              var email = $('#correo').val();
-              valCorreo = 'correo';
-              $('#usuarioModal').modal();
-              //enviar(email);
-              //$('#myModal').modal();
-              //$('#correo').val('');
-
-         }
-      });*/
 }
 
 
@@ -47,36 +18,6 @@ function registrar2() {
     $('#userCorreo').val(copiarCorreo);
     $('#usuarioModal').modal();
     $('#correo3').val('');
-
-    /*$("#formulario3").validate({
-        rules: {
-            correo3: {
-                required: true,
-                email: true,
-
-            }
-        },
-        messages: {
-            correo3: {
-                required: "",
-                email: ""
-            }
-        },
-        submitHandler: function(form) {
-            var email = $('#correo3').val();
-            valCorreo = 'correo3';
-            var copiarCorreo = $('#correo3').val();
-            $('#userCorreo').val(copiarCorreo);
-
-            $('#usuarioModal').modal();
-
-            //enviar(email);
-            //$('#myModal').modal();
-            $('#correo3').val('');
-
-        }
-    });*/
-
 
 }
 
@@ -100,11 +41,6 @@ function registrarMovil() {
             $('#userCorreo').val(email);
             valCorreo = 'correo2';
             $('#usuarioModal').modal();
-
-            //userForm2();
-            //enviar(email);
-            //$('#myModal').modal();
-            //$('#correo2').val('');
 
         }
     });
@@ -132,11 +68,7 @@ function registrarMovil2() {
             valCorreo = 'correo4';
             var copiarCorreo = $('#correo4').val();
             $('#userCorreo').val(copiarCorreo);
-
             $('#usuarioModal').modal();
-
-            //enviar(email);
-            //$('#myModal').modal();
             $('#correo4').val('');
 
         }
@@ -145,10 +77,6 @@ function registrarMovil2() {
 
 }
 
-/*function registrar1() {
-    enviar1();
-    $('#myModal').modal();
-}*/
 
 /** BEGIN Formulario de registro */
 function abrirForm() {
@@ -156,9 +84,8 @@ function abrirForm() {
 }
 /** END Formulario de registro */
 
-const urlGuardar = 'https://script.google.com/macros/s/AKfycbxD2r8qY9sZEFwRNJQg9OsvDQoWi9zLiAnZp3FDHMiJ2bvnENc/exec';
 
-/***Hoja de calculo */
+/** Hoja  */
 function enviar(email) {
     var data = new FormData();
     data.append("tipo", "REGISTRO");
@@ -171,9 +98,7 @@ function enviar(email) {
     xhr.withCredentials = true;
 
     xhr.addEventListener("readystatechange", function() {
-        if (this.readyState === 4) {
-            console.log(this.responseText);
-        }
+        if (this.readyState === 4) {}
     });
 
     xhr.open("POST", constantes.servicioWeb);
@@ -194,7 +119,7 @@ function enviar1() {
 
     xhr.addEventListener("readystatechange", function() {
         if (this.readyState === 4) {
-            console.log(this.responseText);
+
         }
     });
 
@@ -265,7 +190,7 @@ function enviarForm() {
 
             xhr.addEventListener("readystatechange", function() {
                 if (this.readyState === 4) {
-                    console.log(this.responseText);
+
                     $('#correo5').val('');
                     $('#nombres').val('');
                     $('#apellidos').val('');
@@ -278,9 +203,6 @@ function enviarForm() {
 
             xhr.open("POST", constantes.servicioWeb);
             xhr.send(data);
-            //enviar(email5);
-            //$('#myModal').modal();
-            //$('#correo5').val('');
 
         }
     });
@@ -347,7 +269,6 @@ function userForm() {
 
             xhr.addEventListener("readystatechange", function() {
                 if (this.readyState === 4) {
-                    console.log(this.responseText);
                     $('#' + valCorreo).val('');
                     $('#userCorreo').val('');
                     $('#userNombres').val('');
@@ -361,8 +282,6 @@ function userForm() {
 
             xhr.open("POST", constantes.servicioWeb);
             xhr.send(data);
-            //enviar(email5);
-            //$('#myModal').modal();
             $('#' + valCorreo).val('');
 
         }
