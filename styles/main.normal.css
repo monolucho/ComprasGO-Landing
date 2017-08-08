@@ -2974,7 +2974,7 @@ p.correo1 {
 .cel2 {
     position: absolute;
     left: 150px;
-    top: 1350px;
+    top: 1450px;
     z-index: 50;
 }
 
@@ -2999,6 +2999,12 @@ p.correo1 {
     .call-to-action p {
         display: block;
         margin: 0 0 15px;
+    }
+    .cel2 {
+        position: absolute;
+        left: 150px;
+        top: 1450px;
+        z-index: 50;
     }
     .mfp-wrap.unica .mfp-content {
         padding: 70px 0 5px;
@@ -3505,9 +3511,12 @@ p.correo1 {
 @media only screen and (max-width: 640px) {
     .cel {
         right: -151px;
+        top: 120px;
     }
     .cel2 {
-        top: 2380px;
+        top: 2409px;
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
     }
     .img-logo {
         margin-left: 90px;
@@ -3527,8 +3536,8 @@ p.correo1 {
     .cel2 {
         left: -60px;
         top: 2430px;
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
     }
     .section-bg2-img .bg2 {
         background-size: 100% 100%;
@@ -3537,7 +3546,9 @@ p.correo1 {
 
 @media only screen and (max-width: 568px) {
     .cel2 {
-        top: 2418px;
+        top: 2732px;
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
     }
     .redes-sociales {
         -webkit-transform: scale(1.5);
@@ -3588,7 +3599,7 @@ p.correo1 {
     .cel {
         position: absolute;
         right: -92px;
-        top: 65px;
+        top: 70px;
         z-index: 200;
         -webkit-transform: scale(0.48);
         transform: scale(0.48);
@@ -3596,7 +3607,7 @@ p.correo1 {
     .cel2 {
         position: absolute;
         left: -125px;
-        top: 2166px;
+        top: 2245px;
         z-index: 50;
         -webkit-transform: scale(0.7);
         transform: scale(0.7);
@@ -3679,7 +3690,13 @@ p.correo1 {
     }*/
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 430px) {
+    .cel2 {
+        top: 2600px;
+    }
+}
+
+@media only screen and (max-width: 416px) {
     #img-cel-2 {
         display: block;
     }
@@ -3687,7 +3704,7 @@ p.correo1 {
         display: none;
     }
     .cel2 {
-        top: 2350px;
+        top: 2366px;
     }
     .cel {
         position: absolute;
@@ -3719,10 +3736,10 @@ p.correo1 {
         display: none;
     }
     .cel2 {
-        top: 2376px;
+        top: 2414px;
     }
     .cel {
-        top: 59px;
+        top: 70px;
         right: -106px;
         -webkit-transform: scale(0.4);
         transform: scale(0.4);
@@ -3737,13 +3754,13 @@ p.correo1 {
         position: absolute;
         /*right: -185px;*/
         right: -123px;
-        top: 4px;
+        top: 10px;
         z-index: 200;
         -webkit-transform: scale(0.3);
         transform: scale(0.3);
     }
     .cel2 {
-        top: 2390px;
+        top: 2427px;
     }
     #img-cel-2 {
         display: block;
@@ -3778,6 +3795,9 @@ p.correo1 {
         -webkit-transform: scale(0.38);
         transform: scale(0.38);
     }
+    .cel2 {
+        top: 2486px;
+    }
     #img-cel-2 {
         display: block;
     }
@@ -3796,11 +3816,11 @@ p.correo1 {
 
 @media only screen and (max-width: 360px) {
     .cel2 {
-        top: 2485px;
+        top: 2529px;
     }
     .cel {
         right: -106px;
-        top: 87px;
+        top: 100px;
         -webkit-transform: scale(0.4);
         transform: scale(0.4);
     }
@@ -3856,11 +3876,11 @@ p.correo1 {
         font-size: 1.0em;
     }
     .cel2 {
-        top: 2641px;
+        top: 2742px;
     }
     .cel {
         right: -115px;
-        top: 87px;
+        top: 115px;
         -webkit-transform: scale(0.35);
         transform: scale(0.35);
     }
