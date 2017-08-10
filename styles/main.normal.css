@@ -3812,6 +3812,12 @@ p.correo1 {
     .section-bg2-img .bg2 {
         background-size: 100% 100%;
     }
+    #compartir-movil {
+        display: block;
+    }
+    #compartir-desk {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -3849,6 +3855,12 @@ p.correo1 {
     .logo-bottom {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
+    }
+    #compartir-movil {
+        display: block;
+    }
+    #compartir-desk {
+        display: none;
     }
     /*[class*="section-bottom"] {
         margin-bottom: 25px;
@@ -3891,6 +3903,12 @@ p.correo1 {
     .logo-bottom {
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
+    }
+    #compartir-movil {
+        display: block;
+    }
+    #compartir-desk {
+        display: none;
     }
 }
 

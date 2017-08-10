@@ -139,7 +139,7 @@ analytics.group();
                                     <input type="email" id="correo2" name="correo2" class="form-control input-lg" placeholder="Correo electrónico">
                                 </div>
                                 <div class="form-group">
-                                    <input class="btn btn-lg btn-block btn-primary" value="REGISTRARME" type="submit" onclick="registrarMovil()" />
+                                    <input class="btn btn-lg btn-block btn-primary" value="REGISTRARME" type="button" onclick="registrarMovil()" />
                                     <!--<button class="btn btn-lg btn-block btn-primary" type="button">REGISTRARME</button> -->
                                 </div>
                             </div>
@@ -267,7 +267,7 @@ analytics.group();
                                     <input type="email" id="correo4" name="correo4" class="form-control input-lg" placeholder="Correo electrónico">
                                 </div>
                                 <div class="form-group">
-                                    <input class="btn btn-lg btn-block btn-primary" value="REGISTRARME" type="submit" onclick="registrarMovil2()" />
+                                    <input class="btn btn-lg btn-block btn-primary" value="REGISTRARME" type="button" onclick="registrarMovil2()" />
 
                                 </div>
                             </div>
@@ -419,7 +419,7 @@ analytics.group();
                             <div class="col-md-6 col-xs-6 fb-share-button" data-href="http://www.comprasgo.com/" data-layout="button" data-size="large" data-mobile-iframe="true">
                                 <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.comprasgo.com%2F&amp;src=sdkpreparse">Compartir</a>
                             </div>
-
+                         
                             <div class="col-md-6 col-xs-6">
                                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.comprasgo.com/" data-lang="es" data-size="large">Twittear</a>
                                 <script>
@@ -435,15 +435,18 @@ analytics.group();
                                     }(document, 'script', 'twitter-wjs');
                                 </script>
                             </div>
+
                         </div>
 
+                        <!-- Begin redes movil -->
                         <div class="row" style="text-align: center" id='compartir-movil'>
-                            <div class="col-md-4 fb-share-button" data-href="http://www.comprasgo.com/" data-layout="button" data-size="large" data-mobile-iframe="true">
-                                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.comprasgo.com%2F&amp;src=sdkpreparse">Compartir</a>
+                            <div class="col-xs-2"></div>
+                            <div class="col-md-6 col-xs-3 fb-share-button" data-href="http://www.comprasgo.com/" data-layout="button" data-size="large" data-mobile-iframe="true">
+                                <a  target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.comprasgo.com%2F&amp;src=sdkpreparse"><img border="0" src="images/facebook.png" width="50px" height="50px"></a>
                             </div>
 
-                            <div class="col-md-4">
-                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.comprasgo.com/" data-lang="es" data-size="large">Twittear</a>
+                            <div class="col-md-6 col-xs-3">
+                                <a  target="_blank" href="https://twitter.com/share" data-url="http://www.comprasgo.com/" data-lang="es" data-size="large"><img border="0" src="images/twitter.png" width="50px" height="50px"></a>
                                 <script>
                                     ! function(d, s, id) {
                                         var js, fjs = d.getElementsByTagName(s)[0],
@@ -457,10 +460,13 @@ analytics.group();
                                     }(document, 'script', 'twitter-wjs');
                                 </script>
                             </div>
-                            <div class="col-md-4">
-                                <a href="whatsapp://send" data-text="Lo que necesites con entrega a domicilio en 60 minutos." data-href="" class="wa_btn wa_btn_s" style="display:block">Compartir</a>
+
+                            <div class="col-xs-2">
+                                <a href="whatsapp://send?text= http://www.comprasgo.com/" data-action="share/whatsapp/share"><img border="0" src="images/whatsapp.png" width="50px" height="50px"></a>
                             </div>
+                            
                         </div>
+                        <!-- End redes movil  -->                        
                     </div>
                 </div>
             </div>

@@ -22,12 +22,16 @@ function registrar2() {
 }
 
 function registrarMovil() {
-    $("#formulario2").validate({
+    var email = $('#correo2').val();
+    $('#userCorreo').val(email);
+    valCorreo = 'correo2';
+    $('#usuarioModal').modal();
+
+    /*$("#formulario2").validate({
         rules: {
             correo2: {
                 required: true,
                 email: true,
-
             }
         },
         messages: {
@@ -43,13 +47,20 @@ function registrarMovil() {
             $('#usuarioModal').modal();
 
         }
-    });
+    });*/
 
 
 }
 
 function registrarMovil2() {
-    $("#formulario4").validate({
+    var email = $('#correo4').val();
+    valCorreo = 'correo4';
+    var copiarCorreo = $('#correo4').val();
+    $('#userCorreo').val(copiarCorreo);
+    $('#usuarioModal').modal();
+    $('#correo4').val('');
+
+    /*$("#formulario4").validate({
         rules: {
             correo4: {
                 required: true,
@@ -72,7 +83,7 @@ function registrarMovil2() {
             $('#correo4').val('');
 
         }
-    });
+    });*/
 
 
 }
@@ -83,7 +94,10 @@ function abrirForm() {
     $('#modalForm').modal();
 }
 /** END Formulario de registro */
+function prueba123() {
+    $('#myModal').modal();
 
+}
 
 /** Hoja  */
 function enviar(email) {
