@@ -28,6 +28,10 @@
     display: none;
 }
 
+.modal-header.usuario{
+  background-image: url("../images/header-userform.png");
+}
+
 .titulo-modal {
     text-align: center;
 }
