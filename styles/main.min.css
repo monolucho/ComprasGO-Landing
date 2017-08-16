@@ -31,6 +31,13 @@
 .modal-header.usuario{
   background-image: url("../images/header-userform.png");
   height: 184px;
+  border-radius:6px 6px 0 0;
+}
+
+.modal-header.shopper{
+  background-image: url("../images/header-shooperform.png");
+  height: 184px;
+  border-radius:6px 6px 0 0;
 }
 
 .titulo-modal {
