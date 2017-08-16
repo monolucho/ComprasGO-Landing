@@ -39,6 +39,7 @@
 
 .modal-header.usuario{
   background-image: url("../images/header-userform.png");
+  height: 184px;
 }
 
 .titulo-modal {
