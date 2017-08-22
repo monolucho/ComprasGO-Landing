@@ -3071,7 +3071,7 @@ p.correo1 {
     .cel2 {
         position: absolute;
         left: -37px;
-        top: 2170px;
+        top: 2292px;
         z-index: 50;
     }
     .section-bg2-img .bg2 {
@@ -3105,10 +3105,10 @@ p.correo1 {
     .cel2 {
         position: absolute;
         left: -49px;
-        top: 2289px;
+        top: 2219px;
         z-index: 50;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        /*-webkit-transform: scale(1.2);
+        transform: scale(1.2);*/
     }
     #img-cel {
         display: block;
@@ -3151,7 +3151,7 @@ p.correo1 {
 
 @media only screen and (max-width:732px) {
     .cel2 {
-        top: 2290px;
+        top: 2363px;
     }
     .section-bg2-img .bg2 {
         background-size: 100% 100%;
@@ -3164,7 +3164,7 @@ p.correo1 {
         top: 120px;
     }
     .cel2 {
-        top: 2409px;
+        top: 2476px;
         -webkit-transform: scale(0.8);
         transform: scale(0.8);
     }
@@ -3185,7 +3185,7 @@ p.correo1 {
     }
     .cel2 {
         left: -60px;
-        top: 2430px;
+        top: 2530px;
         -webkit-transform: scale(0.7);
         transform: scale(0.7);
     }
@@ -3196,9 +3196,9 @@ p.correo1 {
 
 @media only screen and (max-width:568px) {
     .cel2 {
-        top: 2732px;
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
+        top: 2656px;
+        /*-webkit-transform: scale(0.9);
+        transform: scale(0.9);*/
     }
     .redes-sociales {
         -webkit-transform: scale(1.5);
@@ -3254,7 +3254,7 @@ p.correo1 {
     .cel2 {
         position: absolute;
         left: -125px;
-        top: 2245px;
+        top: 2346px;
         z-index: 50;
         -webkit-transform: scale(0.7);
         transform: scale(0.7);
@@ -3333,9 +3333,9 @@ p.correo1 {
 }
 
 @media only screen and (max-width:430px) {
-    .cel2 {
+    /*.cel2 {
         top: 2600px;
-    }
+    }*/
 }
 
 @media only screen and (max-width:416px) {
